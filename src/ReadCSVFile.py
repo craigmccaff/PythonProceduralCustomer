@@ -1,7 +1,7 @@
 import csv
 def getFileData(fileName):
     fileData = []
-    with open("resource/" + fileName, 'rt')as dataFile:
+    with open("../resource/" + fileName, 'rt')as dataFile:
         fileReader = csv.reader(dataFile)
         for row in fileReader:
             fileData.append(row)
